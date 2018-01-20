@@ -1,0 +1,188 @@
+<?php
+
+class Navigation_67a3be1 extends \Pimcore\Templating\Helper\Navigation implements \ProxyManager\Proxy\VirtualProxyInterface
+{
+    private $valueHolder5a63712d5661b820378459 = null;
+    private $initializer5a63712d56634123363302 = null;
+    private static $publicProperties5a63712d565c7968810229 = array(
+        
+    );
+    public function getName()
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'getName', array(), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->getName();
+    }
+    public function buildNavigation(\Pimcore\Model\Document $activeDocument, ?\Pimcore\Model\Document $navigationRootDocument = null, ?string $htmlMenuPrefix = null, ?callable $pageCallback = null, $cache = true) : \Pimcore\Navigation\Container
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'buildNavigation', array('activeDocument' => $activeDocument, 'navigationRootDocument' => $navigationRootDocument, 'htmlMenuPrefix' => $htmlMenuPrefix, 'pageCallback' => $pageCallback, 'cache' => $cache), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->buildNavigation($activeDocument, $navigationRootDocument, $htmlMenuPrefix, $pageCallback, $cache);
+    }
+    public function getRenderer(string $alias) : \Pimcore\Navigation\Renderer\RendererInterface
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'getRenderer', array('alias' => $alias), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->getRenderer($alias);
+    }
+    public function render(\Pimcore\Navigation\Container $container, string $rendererName = 'menu', string $renderMethod = 'render', ... $rendererArguments)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'render', array('container' => $container, 'rendererName' => $rendererName, 'renderMethod' => $renderMethod, 'rendererArguments' => $rendererArguments), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->render($container, $rendererName, $renderMethod, ...$rendererArguments);
+    }
+    public function __call($method, array $arguments = array()) : \Pimcore\Navigation\Renderer\RendererInterface
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__call', array('method' => $method, 'arguments' => $arguments), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->__call($method, $arguments);
+    }
+    public function setCharset($charset)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'setCharset', array('charset' => $charset), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->setCharset($charset);
+    }
+    public function getCharset()
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'getCharset', array(), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return $this->valueHolder5a63712d5661b820378459->getCharset();
+    }
+    public static function staticProxyConstructor($initializer)
+    {
+        static $reflection;
+        $reflection = $reflection ?: $reflection = new \ReflectionClass(__CLASS__);
+        $instance = (new \ReflectionClass(get_class()))->newInstanceWithoutConstructor();
+        unset($instance->charset);
+        \Closure::bind(function (\Pimcore\Templating\Helper\Navigation $instance) {
+            unset($instance->builder, $instance->rendererLocator);
+        }, $instance, 'Pimcore\\Templating\\Helper\\Navigation')->__invoke($instance);
+        $instance->initializer5a63712d56634123363302 = $initializer;
+        return $instance;
+    }
+    public function __construct(\Pimcore\Navigation\Builder $builder, \Psr\Container\ContainerInterface $rendererLocator)
+    {
+        static $reflection;
+        if (! $this->valueHolder5a63712d5661b820378459) {
+            $reflection = $reflection ?: new \ReflectionClass('Pimcore\\Templating\\Helper\\Navigation');
+            $this->valueHolder5a63712d5661b820378459 = $reflection->newInstanceWithoutConstructor();
+        unset($this->charset);
+        \Closure::bind(function (\Pimcore\Templating\Helper\Navigation $instance) {
+            unset($instance->builder, $instance->rendererLocator);
+        }, $this, 'Pimcore\\Templating\\Helper\\Navigation')->__invoke($this);
+        }
+        $this->valueHolder5a63712d5661b820378459->__construct($builder, $rendererLocator);
+    }
+    public function & __get($name)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__get', ['name' => $name], $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        if (isset(self::$publicProperties5a63712d565c7968810229[$name])) {
+            return $this->valueHolder5a63712d5661b820378459->$name;
+        }
+        $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
+        if (! $realInstanceReflection->hasProperty($name)) {
+            $targetObject = $this->valueHolder5a63712d5661b820378459;
+            $backtrace = debug_backtrace(false);
+            trigger_error('Undefined property: ' . get_parent_class($this) . '::$' . $name . ' in ' . $backtrace[0]['file'] . ' on line ' . $backtrace[0]['line'], \E_USER_NOTICE);
+            return $targetObject->$name;
+            return;
+        }
+        $targetObject = $this->valueHolder5a63712d5661b820378459;
+        $accessor = function & () use ($targetObject, $name) {
+            return $targetObject->$name;
+        };
+            $backtrace = debug_backtrace(true);
+            $scopeObject = isset($backtrace[1]['object']) ? $backtrace[1]['object'] : new \ProxyManager\Stub\EmptyClassStub();
+            $accessor = $accessor->bindTo($scopeObject, get_class($scopeObject));
+        $returnValue = & $accessor();
+        return $returnValue;
+    }
+    public function __set($name, $value)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__set', array('name' => $name, 'value' => $value), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
+        if (! $realInstanceReflection->hasProperty($name)) {
+            $targetObject = $this->valueHolder5a63712d5661b820378459;
+            return $targetObject->$name = $value;
+            return;
+        }
+        $targetObject = $this->valueHolder5a63712d5661b820378459;
+        $accessor = function & () use ($targetObject, $name, $value) {
+            return $targetObject->$name = $value;
+        };
+            $backtrace = debug_backtrace(true);
+            $scopeObject = isset($backtrace[1]['object']) ? $backtrace[1]['object'] : new \ProxyManager\Stub\EmptyClassStub();
+            $accessor = $accessor->bindTo($scopeObject, get_class($scopeObject));
+        $returnValue = & $accessor();
+        return $returnValue;
+    }
+    public function __isset($name)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__isset', array('name' => $name), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
+        if (! $realInstanceReflection->hasProperty($name)) {
+            $targetObject = $this->valueHolder5a63712d5661b820378459;
+            return isset($targetObject->$name);
+            return;
+        }
+        $targetObject = $this->valueHolder5a63712d5661b820378459;
+        $accessor = function () use ($targetObject, $name) {
+            return isset($targetObject->$name);
+        };
+            $backtrace = debug_backtrace(true);
+            $scopeObject = isset($backtrace[1]['object']) ? $backtrace[1]['object'] : new \ProxyManager\Stub\EmptyClassStub();
+            $accessor = $accessor->bindTo($scopeObject, get_class($scopeObject));
+        $returnValue = $accessor();
+        return $returnValue;
+    }
+    public function __unset($name)
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__unset', array('name' => $name), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        $realInstanceReflection = new \ReflectionClass(get_parent_class($this));
+        if (! $realInstanceReflection->hasProperty($name)) {
+            $targetObject = $this->valueHolder5a63712d5661b820378459;
+            unset($targetObject->$name);
+            return;
+        }
+        $targetObject = $this->valueHolder5a63712d5661b820378459;
+        $accessor = function () use ($targetObject, $name) {
+            unset($targetObject->$name);
+        };
+            $backtrace = debug_backtrace(true);
+            $scopeObject = isset($backtrace[1]['object']) ? $backtrace[1]['object'] : new \ProxyManager\Stub\EmptyClassStub();
+            $accessor = $accessor->bindTo($scopeObject, get_class($scopeObject));
+        $returnValue = $accessor();
+        return $returnValue;
+    }
+    public function __clone()
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__clone', array(), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        $this->valueHolder5a63712d5661b820378459 = clone $this->valueHolder5a63712d5661b820378459;
+    }
+    public function __sleep()
+    {
+        $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, '__sleep', array(), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+        return array('valueHolder5a63712d5661b820378459');
+    }
+    public function __wakeup()
+    {
+        unset($this->charset);
+        \Closure::bind(function (\Pimcore\Templating\Helper\Navigation $instance) {
+            unset($instance->builder, $instance->rendererLocator);
+        }, $this, 'Pimcore\\Templating\\Helper\\Navigation')->__invoke($this);
+    }
+    public function setProxyInitializer(\Closure $initializer = null)
+    {
+        $this->initializer5a63712d56634123363302 = $initializer;
+    }
+    public function getProxyInitializer()
+    {
+        return $this->initializer5a63712d56634123363302;
+    }
+    public function initializeProxy() : bool
+    {
+        return $this->initializer5a63712d56634123363302 && ($this->initializer5a63712d56634123363302->__invoke($valueHolder5a63712d5661b820378459, $this, 'initializeProxy', array(), $this->initializer5a63712d56634123363302) || 1) && $this->valueHolder5a63712d5661b820378459 = $valueHolder5a63712d5661b820378459;
+    }
+    public function isProxyInitialized() : bool
+    {
+        return null !== $this->valueHolder5a63712d5661b820378459;
+    }
+    public function getWrappedValueHolderValue()
+    {
+        return $this->valueHolder5a63712d5661b820378459;
+    }
+}
