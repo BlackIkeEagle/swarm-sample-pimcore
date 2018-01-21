@@ -1,0 +1,5 @@
+FROM dockerwest/php-pimcore:7.1
+
+COPY ./ /phpapp/
+RUN rm -rf /phpapp/var/* && rm -rf /phpapp/web/var/* \
+    && chown -R www-data:www-data /phpapp

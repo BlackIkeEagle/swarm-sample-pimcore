@@ -1,0 +1,4 @@
+FROM dockerwest/nginx-pimcore5:mainline
+
+COPY ./web /phpapp/web
+RUN rm -rf /phpapp/web/var/* && chown -R nginx:nginx /phpapp/web
