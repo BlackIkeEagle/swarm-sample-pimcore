@@ -1,5 +1,10 @@
 FROM dockerwest/php-pimcore:7.1
 
+COPY ./entrypoint.sh /
+COPY ./go-cron /usr/local/bin
 COPY ./ /phpapp/
 RUN rm -rf /phpapp/var/* && rm -rf /phpapp/web/var/* \
     && chown -R www-data:www-data /phpapp
+
+ENTRYPOINT ["/entrypoint.sh"]
+CMD ["php-fpm7.1"]
